@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import Shiny
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+           Text("shiny")
+               
+        RoundedRectangle(cornerRadius: 20)
+            .fill(Color.gray.opacity(0.4))
+            .frame(maxWidth: .infinity)
+            .frame(height: 250)
+            //.shiny(.matte(.offwhite))
+            .shiny(.glossy(.offwhite))
+            .padding()
+       }
+    
 }
 
 #Preview {
