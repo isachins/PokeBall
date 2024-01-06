@@ -18,7 +18,7 @@ struct SplashScreenView: View {
     var body: some View {
         ZStack{
             if isActive {
-                PokemonGridView()
+                Home()
             }
             else {
                 ZStack {

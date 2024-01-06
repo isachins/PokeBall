@@ -27,7 +27,7 @@ struct PokemonGridView: View {
                         NavigationLink {
                             PokemonDetailView(viewModel: viewModel, pokemon: pokemon)
                         } label: {
-                            PokeCell(pokemon: pokemon, viewModel: viewModel)
+                            PokeCellTile(pokemon: pokemon, viewModel: viewModel)
                         }
                         //Text("hello")
                     }.padding(.horizontal)
